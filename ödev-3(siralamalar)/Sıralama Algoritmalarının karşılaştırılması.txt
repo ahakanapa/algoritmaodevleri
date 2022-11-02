@@ -1,14 +1,13 @@
-Sıralama algoritmalarının hızları, dizinin boyutuna ve karmaşıklığına göre değişiklik göstermektedir.Ancak [0-10000] arasında rastgele 100bin adet sayı üretilip bu elemanlar sıralandığında en hızlı algoritmanın quicksort olduğu görülmektedir:
-
-4-selectionsort=382.5
-3-bubblesort=379.1
-2-insertionsort=328.7
+Sıralama algoritmalarının hızları, dizinin boyutuna ve karmaşıklığına göre değişiklik göstermektedir. Ancak [0-10000] arasında rastgele 100bin adet sayı üretilip bu elemanlar sıralandığında en hızlı algoritmanın quicksort olduğu görülmektedir:
 1-quicksort=323
+2-insertionsort=328.7
+3-bubblesort=379.1
+4-selectionsort=382.5
 
 Bunun ana sebebi quicksortun bir pivot belirleyip bu pivotu sağındakiler ve solundakiler ile karşılaştırması yani işlem çokluğudur. Dezavantajı ise çok işlemden dolayı hafızayı daha çok işgal etmesidir.
 
-Selectionsort, dizideki ilk elemanı en küçük değer olarak belirler ve sırayla diğer elemanlarla kıyaslar daha küçük değer bulursa o değeri alır. Diğer sıralamalara göre daha yavaş olmasının sebebide budur(işlemin az olması) . 
+Selectionsort, dizideki ilk elemanı en küçük değer olarak belirler ve sırayla diğer elemanlarla kıyaslar daha küçük değer bulursa o değeri alır. Diğer sıralamalara göre daha yavaş olmasının sebebi de budur (işlemin az olması).
 
-Bubblesort, ilk  ve ikinici elemanı karşılaştırarak işe başlayıp son elemana kadar gider. Sonrasında başa dönüp tekrar karşılaştırma yapar. Bu döngü elemanlar tam sıralanana kadar devam eder. Sürekli başa dönmesi bu algoritmayıda yavaş yapmaktadır.
+Bubblesort, ilk ve  ikinci elemanı karşılaştırarak işe başlayıp son elemana kadar ikili karşılaştırma ile gider. Sonrasında başa dönüp tekrar karşılaştırma yapar. Bu döngü elemanlar tam sıralanana kadar devam eder. Sürekli başa dönmesi bu algoritmayı da yavaş yapmaktadır.
 
-İnsertionsort, bubblesorta göre daha hızlıdır. Bunun ana sebebi bubblesort gibi dizinin en başına dönmeyip onun yerine her yer değiştirmede değiştirilmeden önce  elemanın geridekilerle kıyaslanıp uygun yere yerleştirilmesidir.
+İnsertionsort, bubblesorta göre daha hızlıdır. Bubblesort gibi elemanların sıralanması bitinceye kadar başa dönmek yerine, yer değiştirme işlemi yapılırken değiştirilen elemanın gerideki elemanlar ile de karşılaştırıp uygun yere yerleştirilmesi insertionsortun neden daha hızlı olduğunu göstermektedir.
