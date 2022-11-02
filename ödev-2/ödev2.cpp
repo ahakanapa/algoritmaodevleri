@@ -2,10 +2,10 @@
 
 int farkfonksiyonu(int a, int b){
 	
-	int i;	// i, sayaç
+	int i;	// i, sayaÃ§
 	int c=0;
 	int toplam1=0; 
-    int toplam2=0;
+        int toplam2=0;
    	int sonuc=0;
    	
 	for(i=a;i<=b;i++){
