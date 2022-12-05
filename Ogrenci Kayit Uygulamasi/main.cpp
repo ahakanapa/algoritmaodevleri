@@ -24,7 +24,7 @@ node*verikaydet(node*head){
 		
 		printf("Kaydedilecek ogrenci yok. \n");
 	}else{
-		FILE *dosya=fopen("yazilim.txt","w");
+		FILE *dosya=fopen("veridosyasi.txt","w");
 		node*a=head;
 		
 		while(a!=NULL){
@@ -51,12 +51,12 @@ node*verikaydet(node*head){
 
 node*verioku(node*head){
 			
-	FILE *dosya=fopen("yazilim.txt","r");
+	FILE *dosya=fopen("veridosyasi.txt","r");
 
 	
 	if(dosya==NULL){
 		
-		printf("'yazilim.txt' adinda dosya yok, dosya olusturun.\n");
+		printf("'veridosyasi.txt' adinda dosya yok, dosya olusturun.\n");
 		
 	}else{		
 		
